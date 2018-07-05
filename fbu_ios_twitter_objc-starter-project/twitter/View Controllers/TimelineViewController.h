@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Tweet.h"
 
 @interface TimelineViewController : UIViewController
 
+@property (strong, nonatomic) Tweet *tweet;
+@property (weak, nonatomic) IBOutlet UITableView *tweetTable;
+- (void)didTweet:(Tweet *)tweet;
 @end
